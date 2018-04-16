@@ -22,7 +22,7 @@ var popup = L.popup();
 var LocationIcon2=L.Icon.Label.extend({options:{iconUrl:'style/images/icons/iconStatic.png',shadowUrl:null,iconSize:new L.Point(8, 8),iconAnchor:new L.Point(0, 1),labelAnchor:new L.Point(2, 0),wrapperAnchor:new L.Point(12, 13),labelClassName:'icon i-marker'}});
 var LocationIcon=L.Icon.Label.extend({options:{iconUrl:'style/images/icons/iconStatic.png',shadowUrl:null,iconSize:new L.Point(8, 8),iconAnchor:new L.Point(0, 1),labelAnchor:new L.Point(2, 0),wrapperAnchor:new L.Point(12, 13),labelClassName:'locationLabel'}});
 var map=L.map('map',{minZoom:<?=$MAP['minZoom']?>,maxZoom:<?=$MAP['maxZoom']?>}).setView(<?=$MAP['setView']?>);
-L.tileLayer('maps/<?=$MAP['name']?>/{z}/{x}/{y}.png',{tms:true,continuousWorld:true,attribution:'Created by Nightmare - <a href="http://n8m4re.de">N8M4RE.DE</a>'}).addTo(map);
+L.tileLayer('maps/<?=$MAP['name']?>/{z}/{x}/{y}.png',{tms:true,continuousWorld:true,attribution:'Map Modified by Tempted_ - <a href="http://www.surviveth3dead.com">Survive Th3 Dead</a>'}).addTo(map);
 loadLocations();
 map.on('mousemove', updateGPS);
 map.on('click', onMapClick);
